@@ -1,0 +1,165 @@
+{
+  "status": "optimal_and_independently_checked",
+  "provenance": {
+    "created_at_utc": "2026-11-07T11:27:30.322188+00:00",
+    "project_version": "0.1.0",
+    "python": "3.12.3",
+    "numpy": "2.5.4",
+    "scipy": "1.18.1",
+    "git_commit": null,
+    "git_dirty": null,
+    "source_sha256": {
+      "__init__.py": "620933a9d68892728838a96eea56ab8fbbce2dc9ad5f16eabb5b7dd7e7cdfb77",
+      "cli.py": "34da7d2ca131fb90574464eb20d3310a251188c782792f398eeddf2d0009b148",
+      "data.py": "178c578945863ef195e18098af0d8ea118f17618769bcda5a261a241369d4a79",
+      "model.py": "28391f4260f25652ec416d23ec80bae5d6a3427a883d04f4347155cde4a01448",
+      "reporting.py": "abe931f5f9ffed29632699f262f7b93664d7ba2af08b381f842ae15de88d8c68",
+      "schema.py": "02398d8a55efee3f768048996683177f2bc1bb47946f57352dac283ffd3b6c0f",
+      "validation.py": "950abfb6a1e487c041372b8a79e9c3fb6ae5d6c970e9890691e04856d92fa746"
+    },
+    "inputs": [
+      {
+        "filename": "historical_low_emissions_one_year.toml",
+        "sha256": "c7fe66a104524df13ca913f82e7600325893e45e5720c10233526d599ee30d36"
+      },
+      {
+        "filename": "technologies_2017.csv",
+        "sha256": "1afd27216c1a215ceded94f875ee195b3279fe8e269a860c98f70cd50cd0f02d"
+      },
+      {
+        "filename": "nem_trace2.csv",
+        "sha256": "2bc99a213d185d96c78a3504e1c90e513d8a9d5714bf8a7f7acf7c5cde6dd8b9"
+      }
+    ],
+    "configuration": {
+      "name": "historical_one_weather_year_emissions_limit",
+      "description": "First recovered weather year, with an illustrative limit of 0.1 tCO2/MWh; a smaller constrained integration case.",
+      "inputs": {
+        "technologies": "technologies_2017.csv",
+        "trace": "../data/traces/nem_trace2.csv",
+        "trace_format": "legacy_nem",
+        "periods": [
+          "2003-2004"
+        ]
+      },
+      "planning": {
+        "emissions_limit_t_per_mwh": 0.1,
+        "emissions_limit_scope": "per_period",
+        "time_limit_seconds": 120,
+        "solver_method": "highs-ipm"
+      }
+    }
+  },
+  "trace": {
+    "standard_calendar": "8760-hour financial years; leap days removed",
+    "demand_repeat_status": "repeated across weather years",
+    "source_sha256": "2bc99a213d185d96c78a3504e1c90e513d8a9d5714bf8a7f7acf7c5cde6dd8b9",
+    "trace_format": "legacy_nem",
+    "periods": [
+      "2003-2004"
+    ],
+    "hours": 8760,
+    "coverage": "2003-07-01T00:00 to 2004-06-30T23:00"
+  },
+  "planning": {
+    "carbon_price_per_t": 0.0,
+    "emissions_limit_t_per_mwh": 0.1,
+    "emissions_limit_scope": "per_period",
+    "time_limit_seconds": 120,
+    "solver_method": "highs-ipm"
+  },
+  "technologies": [
+    {
+      "name": "nuclear",
+      "profile": "firm",
+      "annual_fixed_cost_per_mw": 531377.4776470589,
+      "variable_cost_per_mwh": 22.641176470588235,
+      "co2_t_per_mwh": 0.0,
+      "availability": 0.91,
+      "min_capacity_mw": 0.0,
+      "max_capacity_mw": null
+    },
+    {
+      "name": "ccgt",
+      "profile": "firm",
+      "annual_fixed_cost_per_mw": 376767.5999999999,
+      "variable_cost_per_mwh": 49.400000000000006,
+      "co2_t_per_mwh": 0.38,
+      "availability": 0.93,
+      "min_capacity_mw": 0.0,
+      "max_capacity_mw": null
+    },
+    {
+      "name": "gas",
+      "profile": "firm",
+      "annual_fixed_cost_per_mw": 93857.14285714287,
+      "variable_cost_per_mwh": 75.82857142857144,
+      "co2_t_per_mwh": 0.62,
+      "availability": 0.95,
+      "min_capacity_mw": 0.0,
+      "max_capacity_mw": null
+    },
+    {
+      "name": "wind",
+      "profile": "wind",
+      "annual_fixed_cost_per_mw": 247163.4,
+      "variable_cost_per_mwh": 5.0,
+      "co2_t_per_mwh": 0.0,
+      "availability": 0.99,
+      "min_capacity_mw": 0.0,
+      "max_capacity_mw": null
+    },
+    {
+      "name": "solar",
+      "profile": "solar",
+      "annual_fixed_cost_per_mw": 253409.28,
+      "variable_cost_per_mwh": 2.0,
+      "co2_t_per_mwh": 0.0,
+      "availability": 0.99,
+      "min_capacity_mw": 0.0,
+      "max_capacity_mw": null
+    }
+  ],
+  "storage_assumptions": null,
+  "storage_power_mw": 0.0,
+  "storage_energy_mwh": 0.0,
+  "solver": {
+    "name": "HiGHS bundled with the recorded SciPy distribution",
+    "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+    "seconds": 20.51776040601544,
+    "iterations": 28
+  },
+  "accounting": {
+    "passed": true,
+    "absolute_tolerance": 1e-05,
+    "relative_tolerance": 1e-08,
+    "max_hourly_balance_residual_mw": 7.275957614183426e-12,
+    "max_generation_limit_excess_mw": 1.8189894035458565e-12,
+    "max_storage_equation_residual_mwh": 0.0,
+    "max_simultaneous_storage_mw": 0.0,
+    "objective_reconstruction_error": 0.001667022705078125,
+    "annual_demand_mwh": 232807516.58850002,
+    "annual_generation_mwh": 232807516.5884999,
+    "annual_storage_charge_mwh": 0.0,
+    "annual_storage_discharge_mwh": 0.0,
+    "annual_storage_loss_mwh": 0.0,
+    "annual_fixed_generation_cost": 17049802898.278418,
+    "annual_variable_generation_cost": 5299256951.37369,
+    "annual_carbon_cost": 0.0,
+    "annual_storage_fixed_cost": 0.0,
+    "annual_storage_variable_cost": 0.0,
+    "annual_total_cost": 22349059849.652107,
+    "cost_per_mwh_demand": 95.99801663257844,
+    "annual_emissions_t": 23280751.658850066,
+    "emissions_t_per_mwh_demand": 0.10000000000000027,
+    "warnings": []
+  },
+  "interpretation": [
+    "Greenfield single-bus NEM model, continuous capacity and perfect foresight.",
+    "Common capacities meet every sampled hour; costs are expected annual costs across the supplied periods.",
+    "Availability is constant deterministic output derating, including renewable profiles assumed to describe weather alone.",
+    "Thermal plants can dispatch freely from zero to their available output; no commitment, ramping or reserve constraints.",
+    "Adequacy for supplied traces does not estimate forced-outage reliability or security.",
+    "The optimum is conditional on the supplied assumptions and need not have a unique capacity vector."
+  ]
+}

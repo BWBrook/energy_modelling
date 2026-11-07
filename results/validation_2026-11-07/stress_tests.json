@@ -1,0 +1,32 @@
+[
+  {
+    "case": "eight_weather_year_per_period_emissions_limit",
+    "snapshots": 70080,
+    "weather_periods": 8,
+    "solver_method": "highs",
+    "time_limit_seconds": 600,
+    "status": "failed",
+    "error": "Optimisation time or iteration limit (status 1): Time limit reached. (HiGHS Status 13: model_status is Time limit reached; primal_status is None)",
+    "scipy": "1.18.1",
+    "input_sha256": {
+      "historical_low_emissions.toml": "d8eff6d34f842b8dd01ce4dd17e6896956b5cb367bd000a15016f224f9b4418c",
+      "technologies_2017.csv": "1afd27216c1a215ceded94f875ee195b3279fe8e269a860c98f70cd50cd0f02d",
+      "nem_trace2.csv": "2bc99a213d185d96c78a3504e1c90e513d8a9d5714bf8a7f7acf7c5cde6dd8b9"
+    }
+  },
+  {
+    "case": "eight_weather_year_per_period_emissions_limit",
+    "snapshots": 70080,
+    "weather_periods": 8,
+    "solver_method": "highs-ipm",
+    "time_limit_seconds": 600,
+    "status": "failed",
+    "error": "Optimisation time or iteration limit (status 1): Time limit reached. (HiGHS Status 13: model_status is Time limit reached; primal_status is None)",
+    "scipy": "1.18.1",
+    "input_sha256": {
+      "historical_low_emissions.toml": "4fa54bc7f71bcdab3606235cfa632278b3ce9448409cc34cf97bb8a60bd4960c",
+      "technologies_2017.csv": "1afd27216c1a215ceded94f875ee195b3279fe8e269a860c98f70cd50cd0f02d",
+      "nem_trace2.csv": "2bc99a213d185d96c78a3504e1c90e513d8a9d5714bf8a7f7acf7c5cde6dd8b9"
+    }
+  }
+]

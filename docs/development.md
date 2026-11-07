@@ -25,13 +25,17 @@ Acceptance requires the analytical and adversarial tests to pass, both public
 examples to run from a clean checkout, the full recovered trace to solve and
 pass independent residual checks, and a public repository that excludes large
 raw files and private operational material. Full-data diagnostic evidence is
-recorded in `docs/validation.md` when those checks finish.
+recorded in `docs/validation.md`. The baseline and smaller constrained case
+passed; the full constrained ensemble hit both tested algorithms' explicit
+600-second limits and remains a performance follow-up.
 
 ## Next scientific work
 
 1. Establish a consequential question and comparisons before adding more
    components. Candidate contrasts include the value of firm low-carbon
    generation under different emissions limits and storage assumptions.
+   Profile the large constrained ensemble before a substantial scenario sweep;
+   the current full-data emissions stress case exceeds the tested time budget.
 2. Resolve or replace the projected-demand preprocessing. Choose current,
    documented demand/resource and cost sources, with explicit licences and
    monetary base years.

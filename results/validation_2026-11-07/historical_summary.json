@@ -1,20 +1,20 @@
 {
   "status": "optimal_and_independently_checked",
   "provenance": {
-    "created_at_utc": "2026-11-07T11:13:10.916568+00:00",
+    "created_at_utc": "2026-11-07T11:28:12.458842+00:00",
     "project_version": "0.1.0",
     "python": "3.12.3",
     "numpy": "2.5.4",
     "scipy": "1.18.1",
-    "git_commit": null,
-    "git_dirty": null,
+    "git_commit": "37b91873bd4748f1a9c7182ac06b533a8793bbc8",
+    "git_dirty": false,
     "source_sha256": {
       "__init__.py": "620933a9d68892728838a96eea56ab8fbbce2dc9ad5f16eabb5b7dd7e7cdfb77",
       "cli.py": "34da7d2ca131fb90574464eb20d3310a251188c782792f398eeddf2d0009b148",
       "data.py": "178c578945863ef195e18098af0d8ea118f17618769bcda5a261a241369d4a79",
-      "model.py": "cfe0caf7241a5fc2f566b732062976629dda066a36ef5726b4e5b59af026e17b",
-      "reporting.py": "52a837443b6d2d78875b49e362239e7740c99e7d3e211fccf3c60e68ccb65ca4",
-      "schema.py": "ebbe0581b10cc63d23482c96d11b93eda6688a17049fa5d22219b1bbdf425dd9",
+      "model.py": "28391f4260f25652ec416d23ec80bae5d6a3427a883d04f4347155cde4a01448",
+      "reporting.py": "abe931f5f9ffed29632699f262f7b93664d7ba2af08b381f842ae15de88d8c68",
+      "schema.py": "02398d8a55efee3f768048996683177f2bc1bb47946f57352dac283ffd3b6c0f",
       "validation.py": "950abfb6a1e487c041372b8a79e9c3fb6ae5d6c970e9890691e04856d92fa746"
     },
     "inputs": [
@@ -67,7 +67,8 @@
     "carbon_price_per_t": 0,
     "emissions_limit_t_per_mwh": null,
     "emissions_limit_scope": "expected",
-    "time_limit_seconds": 600
+    "time_limit_seconds": 600,
+    "solver_method": "highs"
   },
   "technologies": [
     {
@@ -127,7 +128,7 @@
   "solver": {
     "name": "HiGHS bundled with the recorded SciPy distribution",
     "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
-    "seconds": 42.599366130074486,
+    "seconds": 46.69776469503995,
     "iterations": 320118
   },
   "accounting": {

@@ -1,0 +1,14 @@
+name = "historical_one_weather_year_emissions_limit"
+description = "First recovered weather year, with an illustrative limit of 0.1 tCO2/MWh; a smaller constrained integration case."
+
+[inputs]
+technologies = "technologies_2017.csv"
+trace = "../data/traces/nem_trace2.csv"
+trace_format = "legacy_nem"
+periods = ["2003-2004"]
+
+[planning]
+emissions_limit_t_per_mwh = 0.1
+emissions_limit_scope = "per_period"
+time_limit_seconds = 120
+solver_method = "highs-ipm"

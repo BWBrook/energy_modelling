@@ -54,7 +54,7 @@ With the selected trace restored at the catalogued path:
 ```sh
 uv run energymod check-inputs --config config/historical.toml
 uv run energymod solve --config config/historical.toml --output outputs/historical
-uv run energymod solve --config config/historical_low_emissions.toml --output outputs/limited
+uv run energymod solve --config config/historical_low_emissions_one_year.toml --output outputs/limited
 ```
 
 Technology assumptions use nameplate MW, annual fixed cost per MW, variable
@@ -62,6 +62,10 @@ cost per generated MWh and tCO2/MWh. The historical cost conversion is
 reproducible with `uv run python scripts/convert_legacy_technologies.py`.
 Monetary base year is unknown; these values are retained to develop the
 modelling machinery, not as present-day prices.
+
+`historical_low_emissions.toml` applies the limit across all eight weather
+years and is a larger solver stress case. Time limits are explicit; a timed
+out solve writes failure metadata and is never reported as an optimum.
 
 ## What the baseline means
 
@@ -80,6 +84,7 @@ does not establish a unique capacity mix.
 ## Project map
 
 - [Methods and equations](docs/methods.md)
+- [Validation evidence and bounded stress tests](docs/validation.md)
 - [Data catalogue and unresolved provenance](docs/data_catalogue.md)
 - [Development status and next work](docs/development.md)
 - [Agent guide](AGENTS.md)
