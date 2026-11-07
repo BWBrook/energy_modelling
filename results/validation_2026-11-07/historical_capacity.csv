@@ -1,0 +1,6 @@
+technology,nameplate_capacity_mw,availability,profile,annual_generation_mwh,capacity_factor,annual_fixed_cost,annual_variable_cost,annual_carbon_cost,annual_total_cost,cost_per_mwh_generated,annual_renewable_curtailment_mwh
+nuclear,0.0,0.91,firm,0.0,,0.0,0.0,0.0,0.0,,
+ccgt,0.0,0.93,firm,0.0,,0.0,0.0,0.0,0.0,,
+gas,39082.95769736842,0.95,firm,136604869.22906125,0.39900161279381446,3668214743.88158,10358552083.82653,0.0,14026766827.70811,102.68130928911327,
+wind,28726.415719696968,0.99,wind,96202647.35943753,0.38229751588078226,7100118579.093749,481013236.7971876,0.0,7581131815.890937,78.80377540511856,56628.69597656244
+solar,0.0,0.99,solar,0.0,,0.0,0.0,0.0,0.0,,0.0

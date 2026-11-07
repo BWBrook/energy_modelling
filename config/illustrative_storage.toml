@@ -1,0 +1,20 @@
+name = "synthetic_solar_and_storage_demonstration"
+description = "Synthetic demonstration only. Storage costs and efficiencies below are illustrative, not recovered 2017 estimates."
+
+[inputs]
+technologies = "technologies_2017.csv"
+technology_names = ["solar", "gas"]
+trace = "../examples/synthetic_48h.csv"
+trace_format = "canonical"
+
+[planning]
+emissions_limit_t_per_mwh = 0
+emissions_limit_scope = "per_period"
+time_limit_seconds = 60
+
+[storage]
+annual_power_cost_per_mw = 10000
+annual_energy_cost_per_mwh = 2500
+charge_efficiency = 0.95
+discharge_efficiency = 0.95
+variable_cost_per_mwh = 0.1

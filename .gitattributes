@@ -1,0 +1,4 @@
+* text=auto eol=lf
+# Preserve catalogued input bytes and the original CRLF source exactly.
+*.csv -text
+archive/2017/energmod_*.r -text

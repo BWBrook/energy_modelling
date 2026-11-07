@@ -1,0 +1,28 @@
+name: Tests
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  baseline:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - uses: astral-sh/setup-uv@v10
+        with:
+          version: "0.11.6"
+          python-version: "3.12"
+          enable-cache: true
+      - run: uv sync --locked
+      - run: uv run pytest -q
+      - run: uv run energymod solve --config config/demo.toml --output outputs/demo
+      - run: uv run energymod solve --config config/illustrative_storage.toml --output outputs/storage
+      - name: Verify parameter conversion and original source preservation
+        run: |
+          uv run python scripts/convert_legacy_technologies.py
+          git diff --exit-code -- config/technologies_2017.csv
+          sha256sum -c data/original_source_sha256.txt

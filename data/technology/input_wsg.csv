@@ -1,0 +1,4 @@
+,cf,avail,lcoe,vom,fuel.cost,therm.effic,co2
+wind,0.33,0.99,90.5,5,0,1,0
+solar,0.32,0.99,92.4,2,0,1,0
+gas,0.2,0.95,129.4,10,6.4,0.35,0.62

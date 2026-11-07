@@ -1,0 +1,25 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "energy-modelling"
+version = "0.1.0"
+description = "Transparent chronological capacity planning for an Australian electricity-system baseline"
+readme = "README.md"
+requires-python = ">=3.12"
+license = "MIT"
+dependencies = ["numpy>=2.0", "scipy>=1.14"]
+
+[project.scripts]
+energymod = "energymod.cli:main"
+
+[dependency-groups]
+dev = ["pytest>=8"]
+plots = ["matplotlib>=3.9"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/energymod"]

@@ -1,0 +1,14 @@
+name = "historical_per_weather_year_emissions_limit"
+description = "Diagnostic historical-data case with a user-selected illustrative limit of 0.1 tCO2/MWh in every weather year."
+
+[inputs]
+technologies = "technologies_2017.csv"
+trace = "../data/traces/nem_trace2.csv"
+trace_format = "legacy_nem"
+
+[planning]
+carbon_price_per_t = 0
+emissions_limit_t_per_mwh = 0.1
+emissions_limit_scope = "per_period"
+time_limit_seconds = 600
+solver_method = "highs-ipm"

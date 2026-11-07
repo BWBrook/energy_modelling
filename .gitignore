@@ -30,3 +30,15 @@ _targets/
 # Operating systems
 .DS_Store
 Thumbs.db
+
+# Recovered raw inputs and project caches
+/data/traces/
+/data/archive/
+/outputs/
+/.venv/
+__pycache__/
+/.pytest_cache/
+*.pyc
+.env
+.env.*
+!.env.example

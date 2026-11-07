@@ -1,0 +1,11 @@
+name = "historical_eight_weather_year_baseline"
+description = "Recovered historical NEM assumptions; one projected demand year with eight empirical weather years."
+
+[inputs]
+technologies = "technologies_2017.csv"
+trace = "../data/traces/nem_trace2.csv"
+trace_format = "legacy_nem"
+
+[planning]
+carbon_price_per_t = 0
+time_limit_seconds = 600

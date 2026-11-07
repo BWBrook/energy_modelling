@@ -1,0 +1,6 @@
+name,profile,annual_fixed_cost_per_mw,variable_cost_per_mwh,co2_t_per_mwh,availability,min_capacity_mw,max_capacity_mw
+nuclear,firm,531377.4776470589,22.641176470588235,0.0,0.91,0,
+ccgt,firm,376767.5999999999,49.400000000000006,0.38,0.93,0,
+gas,firm,93857.14285714287,75.82857142857144,0.62,0.95,0,
+wind,wind,247163.4,5.0,0.0,0.99,0,
+solar,solar,253409.28,2.0,0.0,0.99,0,

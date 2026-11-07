@@ -1,0 +1,32 @@
+original_filename,path,category,bytes,data_rows,columns,sha256
+2013-14 REF_YR PV NSW Neutral.csv,data/archive/2013-14 REF_YR PV NSW Neutral.csv,archive,2099669,9132,51,d328b4740c8223e87f3f317fa28e97a057ecb4f84968d4040cafbee987da7e2a
+2016 NSW Neutral 10POE REF_YR 2013-14.csv,data/archive/2016 NSW Neutral 10POE REF_YR 2013-14.csv,archive,3263187,7305,51,1c5aeeb0b663421aa6dfa1a03da43027aff9436c06bcd83840b9ebe8d2915398
+Polygon26Wind.LPyr.corrected.yr1.csv,data/archive/Polygon26Wind.LPyr.corrected.yr1.csv,archive,161535,8760,5,b5ebec44db0891a4fe9c10ac702bac3f38bc9d454b553e45e71275e753344846
+Polygon6.pv.LPyr.corrected.yr1.csv,data/archive/Polygon6.pv.LPyr.corrected.yr1.csv,archive,179821,8760,5,4570845a1847659efc7a48d362e32a0882167e75168cf51a5a5fee5f0e4c77c2
+Scen2Demand_4950_10POE_delimited.csv,data/archive/Scen2Demand_4950_10POE_delimited.csv,archive,557402,8760,10,08233238f40d878d2758e3a489652bf7568a86de9e7843bb6f9b9b9a46320c07
+Scen2_Demand_2049-50_50POE_withPV_delimited.csv,data/archive/Scen2_Demand_2049-50_50POE_withPV_delimited.csv,archive,648733,8760,10,8bb2acb10aa9c53ba3e5c32fe801964f65ce7aabae7ce24645ecc25efe3f845c
+input_cwsg.csv,data/technology/input_cwsg.csv,technology,178,4,8,a12d23bafa5fa2ac20453077338acaade367a528adec6f6bb298ea94e3e893d5
+input_ng.csv,data/technology/input_ng.csv,technology,128,2,8,9ea11e948a8618d8d64c4eadac737635ac142809941c8b0d46ba9e17380eba3a
+input_nsg.csv,data/technology/input_nsg.csv,technology,154,3,8,d657ed37d8872811c7b7379d667bf0e31cd3fcbdb2750ad3d908f5abb59be148
+input_nwg.csv,data/technology/input_nwg.csv,technology,153,3,8,d7391a472e6739b51b98c0a8cbdd6c5d958ec9a6dd6a3eaa2409aa17e9c0b582
+input_nwsg.csv,data/technology/input_nwsg.csv,technology,187,4,8,8d8a124975e361b9501eebcd0dfa2b3a1e948974a6c47f813ac052ad0edeef3e
+input_swg.csv,data/technology/input_swg.csv,technology,142,3,8,f4aacd41141cc133caecefed344efee5e3a93d198a3d251f0a12985820d1acb6
+input_wsg.csv,data/technology/input_wsg.csv,technology,142,3,8,4d1c9dc1d4f69e7b1716ef0cc3a631569f2c7d1ab693540e205213a4d55abf37
+may_trace.csv,data/archive/may_trace.csv,archive,16437,744,4,ec6a2c43f01d727825ffcea39a0139badfeda0d2a244acd55564fa35ce4cdfbf
+mean.preoptimised.pv.04_05.csv,data/archive/mean.preoptimised.pv.04_05.csv,archive,185998,8760,5,99732da7da9e9f416fa4636955d3b169c21d6e687fe872a09942459f112856d4
+mean.preoptimised.pv.traces.csv,data/archive/mean.preoptimised.pv.traces.csv,archive,6841606,70128,17,e6e036b5577974b69e9e7c145fda435a9fe176065c5500316fffe5c9fdd2392e
+mean.preoptimised.wind.04_05.csv,data/archive/mean.preoptimised.wind.04_05.csv,archive,179959,8760,5,dc9a9030d0f07bad8844c7225cc8c3feea51e55ccfc2240db09ce909ccab4b83
+nem_trace.csv,data/traces/nem_trace.csv,traces,12535615,70080,37,3fee05c41efec986aea4375aff7f6590871796562ea30558feede956ead01aa8
+nem_trace2.csv,data/traces/nem_trace2.csv,traces,13090397,70080,37,2bc99a213d185d96c78a3504e1c90e513d8a9d5714bf8a7f7acf7c5cde6dd8b9
+net_load_2016.csv,data/archive/net_load_2016.csv,archive,1064277,17520,12,0ee949f7a5955bacdd803b62e1a1063b3388e87f26fb7a03f57c6a9823ce8e18
+net_load_2020.csv,data/archive/net_load_2020.csv,archive,1069922,17520,12,fd8ca4721165820c2bb69e2bf047322ae419d426bfc46756c29d0f55d3ce1798
+net_load_2026.csv,data/archive/net_load_2026.csv,archive,1068149,17568,12,f5c04bae733fd50e7c84a2b1f5300a0829b3fc46db7d98ad7e10c74795a98cbe
+net_load_2035.csv,data/archive/net_load_2035.csv,archive,1068350,17520,12,95e3ea16bf00da02a0f336c66720b46ceb083eee2c89f2bfcfe6a92cd4a89f0d
+nuc.eaf.8yr.lp_yr.cut.csv,data/archive/nuc.eaf.8yr.lp_yr.cut.csv,archive,1299277,70080,5,ee2b9223e47f40ec64b8e7f7dfe26f958e573bf58c21deb29d343dce37e7ef17
+nuclear pv wind 8 July.csv,data/archive/nuclear pv wind 8 July.csv,archive,5264,33,12,f99bc811714b30fbea3d0ad055661ce0ce9e102c4c2c2580a25f9a45645f93d5
+pv.sup.trace.8yr.lp_yr.cut.csv,data/archive/pv.sup.trace.8yr.lp_yr.cut.csv,archive,5557934,70080,14,913c55881db9a7394f1a8cd85fd2d7cc857bd8c15434cd82b9e6cdd8a67b3f6d
+pv.trace.8yr.lp_yr.cut.csv,data/archive/pv.trace.8yr.lp_yr.cut.csv,archive,6048517,70080,17,6b50759723f6a1daa71c527d060f5d35a1f6911cbe9530b1e9230f1c11c1a577
+ren_supply_2016.csv,data/archive/ren_supply_2016.csv,archive,243147,365,147,e25ea407d10a6682a988421febc011ded7794da0f490e70cc80cec22c0d2300f
+rs_2016_df.csv,data/archive/rs_2016_df.csv,archive,524411,17520,7,241ff19ffa18dea1295ae1ab99b195e9f2d7b97e3addbd57fefa7da1eb274f27
+wind.sup.trace.8yr.lp_yr.cut.csv,data/archive/wind.sup.trace.8yr.lp_yr.cut.csv,archive,5852042,78865,17,07a27501f2a7e43461174755680f6b5d0e0b70329284ac9467ed76c69b73cf50
+wind.trace.8yr.lp_yr.cut.csv,data/archive/wind.trace.8yr.lp_yr.cut.csv,archive,5546043,70080,18,d6037cac329a4026492800b223733281b054e0076755906700b6e1621410d968

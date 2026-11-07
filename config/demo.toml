@@ -1,0 +1,11 @@
+name = "synthetic_generation_demo"
+description = "A reproducible synthetic 48-hour demonstration using reconstructed 2017 generator costs."
+
+[inputs]
+technologies = "technologies_2017.csv"
+trace = "../examples/synthetic_48h.csv"
+trace_format = "canonical"
+
+[planning]
+carbon_price_per_t = 0
+time_limit_seconds = 60

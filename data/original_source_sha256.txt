@@ -1,0 +1,2 @@
+3b0cbbbf01e384ad178159f252caf4a17802eef18e212972f511e063e671abce  archive/2017/energmod_fn_0.7.r
+06b7ff215d8a5c2e1428d182316b09f17e84a5747a282d00bcab6e1dd4627fb9  archive/2017/energmod_main_0.7.r
