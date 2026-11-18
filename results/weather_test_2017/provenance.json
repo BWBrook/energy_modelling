@@ -1,0 +1,49 @@
+{
+  "created_at_utc": "2026-11-18T04:23:17.801350+00:00",
+  "project_version": "0.1.0",
+  "python": "3.12.3",
+  "numpy": "2.5.4",
+  "scipy": "1.18.1",
+  "git_commit": "8828fa7bac14fe4d06278a6b35c3ad33deb1326a",
+  "git_dirty": true,
+  "source_sha256": {
+    "__init__.py": "620933a9d68892728838a96eea56ab8fbbce2dc9ad5f16eabb5b7dd7e7cdfb77",
+    "cli.py": "34da7d2ca131fb90574464eb20d3310a251188c782792f398eeddf2d0009b148",
+    "data.py": "178c578945863ef195e18098af0d8ea118f17618769bcda5a261a241369d4a79",
+    "model.py": "28391f4260f25652ec416d23ec80bae5d6a3427a883d04f4347155cde4a01448",
+    "reporting.py": "abe931f5f9ffed29632699f262f7b93664d7ba2af08b381f842ae15de88d8c68",
+    "schema.py": "02398d8a55efee3f768048996683177f2bc1bb47946f57352dac283ffd3b6c0f",
+    "validation.py": "950abfb6a1e487c041372b8a79e9c3fb6ae5d6c970e9890691e04856d92fa746"
+  },
+  "inputs": [
+    {
+      "filename": "historical.toml",
+      "sha256": "c1ccf254c9b9e7ebcfb5644bcf708adf7e966f8e25a2b3018c8a2e8f67f86de9"
+    },
+    {
+      "filename": "technologies_2017.csv",
+      "sha256": "1afd27216c1a215ceded94f875ee195b3279fe8e269a860c98f70cd50cd0f02d"
+    },
+    {
+      "filename": "nem_trace2.csv",
+      "sha256": "2bc99a213d185d96c78a3504e1c90e513d8a9d5714bf8a7f7acf7c5cde6dd8b9"
+    }
+  ],
+  "configuration": {
+    "name": "historical_eight_weather_year_baseline",
+    "description": "Recovered historical NEM assumptions; one projected demand year with eight empirical weather years.",
+    "inputs": {
+      "technologies": "technologies_2017.csv",
+      "trace": "../data/traces/nem_trace2.csv",
+      "trace_format": "legacy_nem"
+    },
+    "planning": {
+      "carbon_price_per_t": 0,
+      "time_limit_seconds": 600
+    }
+  },
+  "analysis_sha256": {
+    "run_weather_test.py": "ba89ba84ef9cb646673dd2c07f457b1464551991ff55d55d00303db7a2850434",
+    "weather_replay.py": "046c5483828d95211863b98399f8db2812de1456e3ed9469c556a3532d9e6c07"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "annual_demand_mwh": 232807516.58850002,
+  "shortfall_threshold_mw": 1e-05,
+  "failed_off_diagonal": 38,
+  "off_diagonal_tests": 56,
+  "mean_single_year_optimum_cost": 21461163011.075615,
+  "joint_expected_annual_cost": 21607898643.599045,
+  "annual_premium": 146735632.52342987,
+  "premium_per_mwh": 0.6302873492817378,
+  "premium_percent_of_single_year_mean": 0.6837263779586548
+}

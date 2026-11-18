@@ -84,6 +84,7 @@ does not establish a unique capacity mix.
 ## Project map
 
 - [Methods and equations](docs/methods.md)
+- [Eight-by-eight historical weather test, fleet failures and cost of coverage](results/weather_test_2017/README.md)
 - [Validation evidence and bounded stress tests](docs/validation.md)
 - [Data catalogue and unresolved provenance](docs/data_catalogue.md)
 - [Development status and next work](docs/development.md)

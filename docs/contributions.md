@@ -26,3 +26,10 @@ The public examples are synthetic. Large recovered data remain outside Git
 because their preparation and redistribution provenance are unresolved.
 This work-in-progress repository is an engineering and methodological
 baseline; it is not a released scientific assessment or a journal submission.
+
+For the eight-by-eight weather experiment, Barry approved the design and
+requested the fleet, event and cost comparisons. OpenAI Codex (GPT-6)
+implemented and ran the experiment, interpreted the results and wrote the
+report. Delegated Codex agents implemented the fixed-fleet replay and
+heatmap, and independently reconstructed the results from the recovered
+trace and fitted capacities.

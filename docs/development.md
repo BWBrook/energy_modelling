@@ -39,9 +39,11 @@ passed; the full constrained ensemble hit both tested algorithms' explicit
 2. Resolve or replace the projected-demand preprocessing. Choose current,
    documented demand/resource and cost sources, with explicit licences and
    monetary base years.
-3. Check weather sampling: compare common capacity against independently
-   optimised weather years and vary renewable availability from 0.99 to one.
-   These are sensitivities, not a substitute for new data.
+3. The [eight-by-eight historical weather test](../results/weather_test_2017/README.md)
+   compares common capacity with independently optimised single-year fleets.
+   A longer weather record with coincident demand would test whether the
+   observed shortfall events recur. Renewable availability remains a separate
+   sensitivity.
 4. Examine near-optimal capacity ranges, cost uncertainty and out-of-sample
    weather operation before interpreting a specific capacity mix.
 5. Add operational realism or regional transmission only where the selected
