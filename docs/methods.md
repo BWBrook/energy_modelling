@@ -14,6 +14,11 @@ Western Australia or the Northern Territory. One projected demand year is
 repeated, while weather varies. Fixed spatial resource averages are scaled
 with capacity; the model does not optimise locations.
 
+The [modern fixed-fleet replay](../results/modern_weather_replay/README.md)
+uses hourly AEMO data for the same five regions. It keeps the historical
+capacity vectors and tests three demand definitions. Its methods describe the
+fixed renewable sites, market clock, demand scaling and checks on source gaps.
+
 ## Generation and costs
 
 For technology `i` and snapshot `t`, capacity `K_i` and dispatch `g_ti` are

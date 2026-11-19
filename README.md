@@ -81,6 +81,15 @@ commitment, ramping and investment transitions. Thermal generation, including
 nuclear, is fully flexible within its output bound. One returned optimum
 does not establish a unique capacity mix.
 
+## Replay on newer NEM data
+
+The 2003–04 and joint fleets covered all 26,304 hours of reported NEM
+dispatch demand from July 2023 through June 2026. With the same hourly
+demand shape scaled to the original model's mean, they fell short in 22 and
+18 hours respectively. All occurred on winter evenings. The replay uses a
+fixed group of wind and solar farms, with demand and renewable availability
+matched by timestamp. [Results, measured-demand checks and reproduction](results/modern_weather_replay/README.md)
+
 ## Project map
 
 - [Methods and equations](docs/methods.md)

@@ -19,6 +19,7 @@ jobs:
           enable-cache: true
       - run: uv sync --locked
       - run: uv run pytest -q
+      - run: uv run --locked --group inputs pytest -q tests/inputs/resource_cases.py
       - run: uv run energymod solve --config config/demo.toml --output outputs/demo
       - run: uv run energymod solve --config config/illustrative_storage.toml --output outputs/storage
       - name: Verify parameter conversion and original source preservation

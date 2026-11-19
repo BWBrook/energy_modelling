@@ -1,0 +1,32 @@
+{
+  "python": "3.12.13",
+  "numpy": "2.5.4",
+  "sha256": {
+    "hourly_demand.csv": "39d19c11f953f285ec84ccf9f4c4f424fc2d572b40227fa5008eb7cd0b06dec4",
+    "resource_hours.csv": "ed13fb9c705dc6f2ff88304dd9917ba595ebc2c8b50b8f643d368f9d7b53c094",
+    "fleets.csv": "65d65cf64f7ba7cf91834cc7ad7c6eb377a22e979fd41122fe39191f2871ef62",
+    "summary.json": "26eabb8cc5ef2b0915397926e2b5f3fecd9329af2a85b2f8c6dcabbb32e2c1f5",
+    "technologies_2017.csv": "1afd27216c1a215ceded94f875ee195b3279fe8e269a860c98f70cd50cd0f02d",
+    "dispatch.csv": "a0022e7e5d9cefa5924cf3aec8cabcb7e1a2c3295a64eaf674a8dc9bfc812dec",
+    "measured.csv": "0014c4b7c5266baa799cd24c8d261ad889ee1a4d8adca58b9d35724e32590431",
+    "underlying.csv": "5a35a23219a2de82f7d158456aa870ed9c42394c3e8bd37846bfc06d015ce195",
+    "uv.lock": "d6edf8d3a0f18a439650c8be1f791297726dae3da186457371e0dfccbcc7906f",
+    "modern_case_uigf.py": "77d5ca040b14f540c71f68f32e5c556475d25197a8ad95b8ff7f98cd981422d7",
+    "modern_cohort.py": "75215afa0f728cd399187b550fd7eca8f884fe70467605a9d9a522a00a23610e",
+    "modern_demand.py": "13a8d9db2b25c7e647021a9c4e1904909172022f65382c772ab464d1c6769865",
+    "modern_resources.py": "389d39ed8d3593938675d3eb0ad353ee6f73c38597be8c51619331c6a774ae79",
+    "run_modern_replay.py": "0ad30815392d0c80047bc7534da261206a1cc623d2f01ecae7b9469a3067ea20",
+    "weather_replay.py": "046c5483828d95211863b98399f8db2812de1456e3ed9469c556a3532d9e6c07",
+    "data.py": "178c578945863ef195e18098af0d8ea118f17618769bcda5a261a241369d4a79",
+    "fetch_nem_archives.py": "d6e8d6310ab78ad63245c70a255cb591538a481bae208fb3fa526c71b2cc6494",
+    "nem_replay_sources.csv": "c969d6fcebb0dd7d5ed39326eb008240e7b189f11c9527f63642abd584985cd4"
+  },
+  "start_aest": "2023-07-01T00:00:00+10:00",
+  "end_exclusive_aest": "2026-07-01T00:00:00+10:00",
+  "target_annual_demand_mwh": 232807516.58850002,
+  "dispatch_mean_mw": 20831.192394502737,
+  "old_mean_multiplier": 1.275788731652957,
+  "missing_five_min_by_hour": {
+    "2023-12-05T13:00:00+10:00": 2
+  }
+}

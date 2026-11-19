@@ -5,8 +5,8 @@
 Barry authorised a complete overhaul on 7 November 2026: organise and
 catalogue the recovered CSVs, archive the original R code, build a modern,
 efficient foundation and create a public GitHub repository. The recovered
-mid-2010s material is sufficient for initial development. New data will be
-selected later.
+mid-2010s material supported the initial development. The first modern replay
+uses AEMO data from July 2023 to June 2026.
 
 ## This foundation
 
@@ -41,9 +41,10 @@ passed; the full constrained ensemble hit both tested algorithms' explicit
    monetary base years.
 3. The [eight-by-eight historical weather test](../results/weather_test_2017/README.md)
    compares common capacity with independently optimised single-year fleets.
-   A longer weather record with coincident demand would test whether the
-   observed shortfall events recur. Renewable availability remains a separate
-   sensitivity.
+   The [modern replay](../results/modern_weather_replay/README.md) tests two
+   fixed fleets on three subsequent years of coincident demand and renewable
+   availability. A longer record and alternative wind footprints would test
+   how often the winter evening shortfalls recur.
 4. Examine near-optimal capacity ranges, cost uncertainty and out-of-sample
    weather operation before interpreting a specific capacity mix.
 5. Add operational realism or regional transmission only where the selected

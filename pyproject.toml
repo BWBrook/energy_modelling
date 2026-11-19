@@ -16,6 +16,10 @@ energymod = "energymod.cli:main"
 
 [dependency-groups]
 dev = ["pytest>=8"]
+inputs = [
+    "openpyxl>=3.1",
+    "pyarrow>=18",
+]
 plots = ["matplotlib>=3.9"]
 
 [tool.pytest.ini_options]

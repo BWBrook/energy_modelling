@@ -21,7 +21,7 @@ the stable implementation. Testing caught a storage constraint-indexing defect
 before handoff. Integration checks corrected missing firm profiles and tightened
 the historical calendar and period selection.
 
-No new observational data were downloaded for this development tranche.
+The November 7 baseline used the recovered inputs.
 The public examples are synthetic. Large recovered data remain outside Git
 because their preparation and redistribution provenance are unresolved.
 This work-in-progress repository is an engineering and methodological
@@ -33,3 +33,11 @@ implemented and ran the experiment, interpreted the results and wrote the
 report. Delegated Codex agents implemented the fixed-fleet replay and
 heatmap, and independently reconstructed the results from the recovered
 trace and fitted capacities.
+
+For the modern weather replay, Barry requested an out-of-sample test of the
+two fixed fleets. OpenAI Codex (GPT-6) selected the AEMO sources, processed
+renewable availability, ran the replays and interpreted the results. Delegated
+Codex agents extracted the pre-window plant register, reconstructed missing
+forecasts from original dispatch cases, processed the demand tables and drew
+the worst-day figure. Another Codex agent independently rebuilt the hourly
+balances and shortage events from the separate demand and resource files.
